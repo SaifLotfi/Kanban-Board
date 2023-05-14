@@ -1,0 +1,125 @@
+.kanban {
+    display: flex;
+    padding: 30px;
+    width: 750px;
+    background: #009578;
+    border-radius: 5px;
+    margin: auto;
+}
+body {
+    background-color: #009578;
+}
+.kanban * {
+    font-family: sans-serif;
+}
+
+.kanban__column {
+    flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+    margin-right: 30px;
+}
+
+.kanban__column-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    user-select: none;
+}
+
+.kanban__item-input {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kanban__dropzone {
+    height: 10px;
+    transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+    height: 20px;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kanban__add-item:hover {
+    background-color: #009560;
+}
+
+.deletebtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.editbtn {
+    background-color: #04aa6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.kanban__item-input {
+    display: flex;
+    flex-direction: column; /* Change from "row" to "column" */
+    align-items: flex-start; /* Change from "center" to "flex-start" */
+    padding-bottom: 10px; /* Add some padding to separate buttons from text */
+}
+
+.deletebtn,
+.editbtn {
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+}
+
+.deletebtn {
+    margin-right: 10px;
+}
+
+.deletebtn:hover {
+    background: #f44200;
+}
+
+.editbtn {
+    bottom: 10px;
+}
+.delete-all-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.delete-all-btn:hover {
+    background-color: #d32f2f;
+}
+
+.item-btns{
+    flex-direction: row;
+}

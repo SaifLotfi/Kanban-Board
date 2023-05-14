@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kanban Board</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="kanban">
+            <div class="kanban__column">
+                <div class="kanban__column-title">Not Started</div>
+                <!-- Items goes here -->
+                <button class="kanban__add-item" type="button">+ Add</button>
+            </div>
+            <div class="kanban__column">
+                <div class="kanban__column-title">In Progress</div>
+                <!-- Items goes here -->
+                <button class="kanban__add-item" type="button">+ Add</button>
+            </div>
+            <div class="kanban__column">
+                <div class="kanban__column-title">Done</div>
+                <!-- Items goes here -->
+                <button class="kanban__add-item" type="button">+ Add</button>
+            </div>
+        </div>
+        <dialog id="modal">
+            <p
+                style="
+                    font-family: georgia, garamond, serif;
+                    font-size: 16px;
+                    font-style: italic;
+                "
+            >
+                Are you sure you wanna
+                <span style="color: red">DELETE ALL ITEMS?</span>
+            </p>
+            <button class="deletebtn">yes</button>
+            <button class="editbtn">no</button>
+        </dialog>
+        <button class="delete-all-btn">Delete All Items</button>
+        <script src="./app.js" type="module"></script>
+        <script id="DragDropTouch" src="https://bernardo-castilho.github.io/DragDropTouch/DragDropTouch.js"></script>
+    </body>
+</html>
